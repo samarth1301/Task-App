@@ -58,7 +58,7 @@ nav{
     width: 70%;
     /* background-color: green; */
     margin: auto;
-   
+    
     padding: 2rem;
 }
 
@@ -124,7 +124,7 @@ nav{
     text-align: center;
     background-color: whitesmoke;
     padding: 1rem;
-
+    
 }
 .noteHead h2{
     text-transform: capitalize;
@@ -133,5 +133,29 @@ nav{
     margin-bottom: 2rem;
 }
 
-.noteBody{
+@media only screen and (max-width:700px){
+    
+    nav{
+        height: 100px;
+        padding: 1rem 0.5rem;
+        /* background-color: red; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        height:100vh;
+        width: 80%;
+        /* background-color: green; */
+        margin: auto;
+        
+        padding: 2rem;
+    }
+    .note{
+        margin: 1rem 0;
+        width: 100%;
+    }
+    #notesContainer{
+        flex-direction: column;
+    }
 }

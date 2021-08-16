@@ -3,7 +3,9 @@ const noteArr=[];
 const textArr=[];
 const store=JSON.parse(localStorage.getItem('notes'));
 console.log(store);
-if(store!=null){
+if(store!=null || store.length===0){
+    
+    
     document.getElementById('desc').className='hide';
     store.forEach((e)=>{
         let element=document.createElement('div');
@@ -46,6 +48,8 @@ if(store!=null){
         // document.getElementById('notesContainer').appendChild(element);
         noteArr.push(element);
         document.getElementById('notesContainer').appendChild(element);
+        console.log(e);
+        textArr.push(e);
     })
 }
 

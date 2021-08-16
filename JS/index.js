@@ -8,7 +8,7 @@ if(store==null ){
     console.log('removed hide class');
     document.getElementById('desc').classList.remove("hide");
 }
-if(store!=null && store.length===0){
+else if(store!=null && store.length===0){
         document.getElementById('desc').classList.remove("hide");
     
 }

@@ -4,11 +4,12 @@ const textArr=[];
 const store=JSON.parse(localStorage.getItem('notes'));
 console.log(store);
 
-if(store==null || store.length===0){
+if(store==null ){
+    console.log('removed hide class');
     document.getElementById('desc').classList.remove("hide");
 }
 
-if(store!=null || store.length===0){
+if(store!=null ){
     
     
     document.getElementById('desc').className='hide';

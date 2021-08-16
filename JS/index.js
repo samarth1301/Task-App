@@ -8,12 +8,12 @@ if(store==null ){
     console.log('removed hide class');
     document.getElementById('desc').classList.remove("hide");
 }
-if(store.length===0){
+if(store!=null && store.length===0){
         document.getElementById('desc').classList.remove("hide");
     
 }
 
-if(store!=null ){
+else if(store!=null ){
     
     
     document.getElementById('desc').className='hide';
